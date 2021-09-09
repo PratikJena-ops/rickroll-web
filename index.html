@@ -1,0 +1,29 @@
+<html>
+  
+<h1>RickRoll!</h1> 
+<p id="counter"></p>
+  
+<script>
+  
+let Time = 3;
+  
+document.getElementById("counter").innerHTML = "Prepare to be rick rolled in " + Time + "s";  
+  
+var x = setInterval(function() {
+Time--;
+  
+document.getElementById("counter").innerHTML = "Prepare to be rick rolled in " + Time + "s";    
+  
+if(Time == 0)
+{
+ window.location.href = "https://youtu.be/bxqLsrlakK8";
+}
+  
+},1000)
+
+
+</script>  
+<body>
+  
+</body>
+</html>
